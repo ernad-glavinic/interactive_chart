@@ -42,5 +42,29 @@ new Chart(lineChart, {
             }
         ]
     }
+});
 
+const pieChart = document.getElementById('pieChart');
+
+const labels2 = ['Serbia', 'BiH', 'Croatia', 'N. Mac', 'MNE', 'Other'];
+
+new Chart(pieChart, {
+    type: 'pie',
+    data: {
+        labels: labels2,
+        datasets: [
+            {
+                label: 'Posjete po zemljama',
+                data: [ 49.6, 20.3, 9.5, 3.6, 2.6, 14.4],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                ],
+            }
+        ]
+    }
 });
